@@ -4,8 +4,8 @@ import org.example.Comands.Command;
 
 import java.util.ArrayList;
 
-public class Dogs extends HomeAnimals {
-    public Dogs(String name, ArrayList<Command> commands, String dateOfBirth) {
+public class Donkey extends PackAnimals{
+    public Donkey(String name, ArrayList<Command> commands, String dateOfBirth) {
         super(name, commands, dateOfBirth);
     }
 }
