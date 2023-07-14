@@ -11,9 +11,10 @@ public abstract class Animal {
    private String dateOfBirth;
 
 
-    public Animal(String name, ArrayList<Command> commands, String dateOfBirth) {
+    public Animal(String name,  String dateOfBirth) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
+        this.commands = new ArrayList<Command>();
     }
 
     public void educateCommand(String nameCommand, String descriptionCommand){
@@ -39,5 +40,13 @@ public abstract class Animal {
 
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                '}';
     }
 }
