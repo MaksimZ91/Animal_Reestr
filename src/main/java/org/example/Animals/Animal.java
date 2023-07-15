@@ -11,8 +11,8 @@ public abstract class Animal {
    private String dateOfBirth;
 
 
-    public Animal(String name,  String dateOfBirth) {
 
+    public Animal(String name,  String dateOfBirth ) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
         this.commands = new ArrayList<Command>();
@@ -39,9 +39,6 @@ public abstract class Animal {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
 
     @Override
     public String toString() {
