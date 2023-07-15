@@ -1,15 +1,15 @@
 package org.example;
-
-import org.example.Animals.*;
 import org.example.Controller.Controller;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
 
         Controller ct = new Controller();
-        ct.start();
+        boolean triger = true;
+        while (triger){
+            triger = ct.start();
+        }
+
 
 
 
